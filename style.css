@@ -1,0 +1,106 @@
+/* Reset margin and padding for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Fullscreen image styling */
+.fullscreen-image {
+    background-image: url('floor_bg_1.jpg'); /* Înlocuiește cu calea corectă a imaginii */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative; /* Adăugat pentru a permite poziționarea absolută a tabelului */
+}
+
+/* Transparent table styling */
+.transparent-table {
+    position: absolute; /* Poziționare absolută pentru a fi plasat în dreapta */
+    top: 0; /* Setează distanța de sus */
+    right: 0; /* Setează distanța de la marginea dreaptă */
+    height: 100%; /* Se extinde pe toată înălțimea */
+    width: 10%; /* Ocupă 10% din lățimea ecranului */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal negru semi-transparent */
+    border-collapse: separate; /* Use separate borders to allow gaps */
+    border-spacing: 1px; /* Add 1px gap between rows */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center cells vertically */
+    align-items: center; /* Center cells horizontally */
+    padding: 1.5px; /* Add 1.5px padding on left and right */
+}
+
+/* Styling for table headers and cells */
+.transparent-table th, .transparent-table td {
+    padding: 5px; /* Add padding to increase the size of the cells */
+    border: none; /* Elimina bordura celulelor */
+    background-color: transparent; /* Fully transparent background */
+    text-align: center; /* Centrează textul */
+    vertical-align: middle; /* Centrează textul pe verticală */
+    margin: 0; /* Remove any margin */
+    min-width: 75px; /* Ensure cells are at least 75px wide */
+    min-height: 20px; /* Ensure cells are at least 20px high */
+    font-size: 14px; /* Directly set the font size */
+    font-weight: bold; /* Make the text bold */
+    color: gainsboro; /* Set text color to white */
+}
+
+/* Optional: to ensure no extra spaces between rows */
+.transparent-table tr {
+    margin: 0; /* Elimină marginile între rânduri, dacă există */
+    padding: 0; /* Remove any padding */
+}
+
+/* Flex effect on buttons */
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px; /* Reduced padding */
+    margin: 5px; /* Reduced margin */
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.7);
+    background-color: #0056b3;
+}
+
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Reduced padding */
+    font-size: 14px; /* Directly set the font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Set text color to white */
+    border: 2px solid white; /* Add white border */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    margin: 0; /* Remove any margin */
+    width: 100%; /* Ensure rectangles take full width of the cells */
+    min-height: 20px; /* Ensure rectangles are at least 20px high */
+    border-radius: 10px; /* Add rounded corners */
+    transition: all 0.3s ease; /* Add transition for dynamic effect */
+}
+
+.rectangle:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black on hover */
+    border-color: #0056b3; /* Change border color on hover */
+}
+
+.svg-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  
